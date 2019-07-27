@@ -1,0 +1,13 @@
+﻿/* Hiding Number Spinners - Webkit Browsers*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hiding Number Spinners - Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* background-color: #36454f; = charcoal */
