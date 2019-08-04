@@ -4,22 +4,24 @@
 <head>
   <meta charset="utf-8" />
   <title>Marc Rivers | Front-End Web Developer</title>
-  <link href="css/style.css" rel="stylesheet" />
   <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!---- Header ---->
+  <!---- NAVIGATION ---->
   <h1>Pathfinder Mod Tracker</h1>
   <nav>
     <ul>
       <li>Pathfinder Mod Tracker</li>
-      <li>Personal and Contact</li>
+      <li><a href="about.html">Personal and Contact</a></li>
     </ul>
   </nav>
   
+  <!---- MAIN ---->
   <main>
     <section>
+      <!---- Introduction ---->
       <h2>What's All This, Then?</h2>
       <p>
         Have you ever been playing Pathfinder (or a similar tabletop game) and realized in
@@ -39,11 +41,12 @@
     </section>
   
     <!---- Ability Scores and Modifiers ---->
-    <!-- User will input ability scores, hit "Set" and see ability modifiers output -->
-  
+    
+    <!---- FORM ---->
     <form>
       <fieldset>
         <legend>Ability Scores</legend>
+        <!-- Strength -->
         <div>
           <label for="str">Strength</label>
           <input type="number" id="str" name="str-score" min="1" />
@@ -53,6 +56,7 @@
           <div class="output" id="str-new" name="str-new"></div>
         </div>
   
+        <!-- Dexterity -->
         <div>
           <label for="dex">Dexterity</label>
           <input type="number" id="dex" name="dex-score" min="1" />
@@ -62,6 +66,7 @@
           <div class="output" id="dex-new" name="dex-new"></div>
         </div>
   
+        <!-- Constitution -->
         <div>
           <label for="con">Constitution</label>
           <input type="number" id="con" name="con-score" min="1" />
@@ -71,6 +76,7 @@
           <div class="output" id="con-new" name="con-new"></div>
         </div>
   
+        <!-- Intelligence -->
         <div>
           <label for="intel">Intelligence</label>
           <input type="number" id="intel" name="intel-score" min="1" />
@@ -85,6 +91,7 @@
           -->
         </div>
   
+        <!-- Wisdom -->
         <div>
           <label for="wis">Wisdom</label>
           <input type="number" id="wis" name="wis-score" min="1" />
@@ -94,6 +101,7 @@
           <div class="output" id="wis-new" name="wis-new"></div>
         </div>
   
+        <!-- Charisma -->
         <div>
           <label for="cha">Charisma</label>
           <input type="number" id="cha" name="cha-score" min="1" />
@@ -104,52 +112,49 @@
         </div>
       </fieldset>
   
+      <!-- Set Scores Button -->
       <button type="button" id="set">Set Scores</button>
   
   
-      <!---- Checkboxes ---->
-      <!-- User checks the box of each active condition and a "New Mod" score is generated -->
-
-      <!-- Buffs/Bonuses -->
+      <!---- CHECKBOXES ---->
+      
+      <!---- Buffs/Bonuses ---->
       <fieldset>
         <legend>Buffs</legend>
         <input type="checkbox" id="eagle" name="buff" value="eagle" />
         <label for="eagle">Eagle's Splendor</label>
-        <!-- +4 Cha -->
         <input type="checkbox" id="fox" name="buff" value="fox" />
         <label for="fox">Fox's Cunning</label>
-        <!-- +4 Int -->
         <input type="checkbox" id="righteous" name="buff" value="righteous" />
         <label for="righteous">Righteous Might</label>
-        <!-- +4 Str and Con, -2 Dex -->
       </fieldset>
-  
-  
+    
       <!---- Conditions/Status Ailments ---->
       <fieldset>
         <legend>Conditions</legend>
         <input type="checkbox" id="grappled" name="condition" value="grappled" />
         <label for="grappled">Grappled</label>
-        <!-- -4 Dex -->
         <input type="checkbox" id="fatigued" name="condition" value="fatigued" />
         <label for="fatigued">Fatigued</label>
-        <!-- -2 Str and Dex -->
         <input type="checkbox" id="nauseated" name="condition" value="nauseated" />
         <label for="nauseated">Nauseated</label>
-        <!-- -2 across the board! -->
       </fieldset>
     
+      <!-- Clear Button -->
       <button type="reset" id="reset">Clear</button>
     </form>
   </main>
   
   
-  <!---- Footer ---->
+  <!---- FOOTER ---->
   <footer>
     <p>&copy; Marc Rivers 2019</p>
   </footer>
   
+  
+  <!---- SCRIPTS ---->
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 
 </body>
