@@ -1,4 +1,6 @@
-﻿/*** GENERAL ***/
+﻿@import url('https://fonts.googleapis.com/css?family=Aleo|Libre+Baskerville|Metamorphous&display=swap');
+
+/*** GENERAL ***/
 
 /* Hiding Number Spinners - Webkit Browsers*/
 input[type=number]::-webkit-inner-spin-button,
@@ -6,7 +8,6 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Hiding Number Spinners - Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
@@ -18,14 +19,38 @@ input[type='number'] {
 
 
 /*** BODY ***/
-/*body {
 
-}*/
 
 
 /*** FORM ***/
-.output {
+fieldset {
+  margin-bottom: 15px;
+}
+
+fieldset div {
+  max-height: 35px;
+}
+
+input[type='number'] {
+  width: 3em;
+  text-align: center;
+  border-style: inset;
+}
+
+.base-out,
+.new-out,
+.custom-checkbox {
   display: inline-block;
+}
+
+.base-out,
+.new-out {
+  min-height: 30px;
+  min-width: 3em;
+  border-width: thin;
+  border-style: ridge;
+  background-color: #c7c7c7;
+  text-align: center;
 }
 
 
@@ -39,7 +64,6 @@ input[type='number'] {
 /*** PAGE: ABOUT ***/
 .profile {
   border-radius: 50%;
-  /*border: solid black 5px;*/
 }
 
 /* To Flip Profile Image*/
@@ -50,38 +74,39 @@ input[type='number'] {
   height: 250px;
   z-index: 1;
 }
-
 #f1_container {
-  perspective: 1000;
+  perspective: 1000px;
 }
-
 #f1_card {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 1.0s linear;
 }
-
 #f1_container:hover #f1_card {
   transform: rotateY(180deg);
-  /*box-shadow: -5px 5px 5px #aaa;*/
 }
-
 .face {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-
 .face.back {
   display: inline-block;
   transform: rotateY(180deg);
-  /*box-sizing: border-box;*/
-  /*padding: 10px;*/
-  /*color: white;
-  text-align: center;
-  background-color: #aaa;*/
+}
+
+
+/*** FONTS ***/
+/* Body Font Stack */
+body {
+  font-family: 'Libre Baskerville', 'Aleo', serif;
+}
+
+/* Header Font Stack */
+h1, h2, h3 {
+  font-family: 'Metamorphous', serif;
 }
 
 /*** COLORS ***/

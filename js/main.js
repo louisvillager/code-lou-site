@@ -37,8 +37,6 @@ setButton.addEventListener('click', () => {
     abilityScore[i] = scores[i].value;
     baseModScore[i] = scoreMod(abilityScore[i]);
     newModScore[i] = scoreMod(abilityScore[i]);
-    //console.log(abilityScore[i]);
-    //console.log(baseModScore[i]);
     baseMod[i].innerHTML = baseModScore[i];
   }
 })
@@ -149,6 +147,3 @@ clearButton.addEventListener('click', () => {
     newModScore[i] = 0;
   }
 })
-
-
-// Flip Profile Image
