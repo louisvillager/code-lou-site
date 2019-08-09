@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="flex">
   <!---- NAVIGATION ---->
   <nav class="navbar navbar-expand-lg navbar-light">
     <h1>Marc Rivers</h1>
@@ -28,7 +28,7 @@
   </nav>
 
   <!---- MAIN ---->
-  <main>
+  <main id="about">
     <h2>About Me</h2>
     <div id="f1_container">
       <div id="f1_card">
@@ -40,21 +40,29 @@
         </div>
       </div>
     </div>
-    <p>
-      I'm learning front-end web development with the goal of eventually beginning
-      a career as a web developer.  This site was created as part of the Code Louisville
-      Front-End Web Development course, covering HTML, CSS, and JavaScript.
-    </p>
-    <p>
-      When I'm not buckling down to learn new skills for a career shift, I'm writing
-      fantasy fiction, watching soccer and hockey, following University of Louisville
-      sports, and trying to figure out what my cat is squawking about.
-    </p>
-    <p>I'm also in the market for a D&D group, but I could jump back into Pathfinder, too.</p>
+    <section class="bio">
+      <p>
+        I'm learning front-end web development with the goal of eventually beginning
+        a career as a web developer.  This site was created as part of the Code Louisville
+        Front-End Web Development course, covering HTML, CSS, and JavaScript.
+      </p>
+      <p>
+        When I'm not buckling down to learn new skills for a career shift, I'm writing
+        fantasy fiction, watching soccer and hockey, following University of Louisville
+        sports, and trying to figure out what my cat is squawking about.
+      </p>
+      <p>I'm also in the market for a D&D group, but I could jump back into Pathfinder, too.</p>
+    </section>
+    <section class="contact">
+      <ul class="contact-info">
+        <li class="phone"><a href="tel:5025009094">502.500.9094</a></li>
+        <li class="mail"><a href="mailto:mrivers2133@outlook.com">mrivers2133@outlook.com</a></li>
+      </ul>
+    </section>
   </main>
 
   <!---- FOOTER ---->
-  <footer>
+  <footer class="footer">
     <p>&copy; Marc Rivers 2019</p>
   </footer>
 

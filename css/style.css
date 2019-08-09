@@ -13,24 +13,39 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+#about,
+#index-main {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 
 /*** NAVIGATION ***/
 
 
 
 /*** BODY ***/
+html, body {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 
 /*** FORM ***/
-fieldset {
-  margin-bottom: 15px;
-}
-
-fieldset div {
-  max-height: 35px;
-}
-
 input[type='number'] {
   width: 3em;
   text-align: center;
@@ -38,8 +53,7 @@ input[type='number'] {
 }
 
 .base-out,
-.new-out,
-.custom-checkbox {
+.new-out {
   display: inline-block;
 }
 
@@ -59,12 +73,48 @@ input[type='number'] {
 
 
 /*** PAGE: MOD TRACKER ***/
+form {
+  margin-bottom: 1em;
+}
+
+.flex-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 44px;
+  flex-wrap: wrap;
+}
+
+.flex-item-a,
+.flex-item-base,
+.flex-item-new {
+  align-items: center;
+  min-height: 44px;
+  padding-right: 1em;
+}
+
+.buffs,
+.conditions {
+  display: flex;
+  flex-direction: column;
+}
+
+.buffs label,
+.conditions label {
+  margin-right: 5px;
+}
+
+#reset {
+  margin-top: 1em;
+}
 
 
 /*** PAGE: ABOUT ***/
 .profile {
   border-radius: 50%;
 }
+
+
 
 /* To Flip Profile Image*/
 #f1_container {
@@ -109,6 +159,10 @@ h1, h2, h3 {
   font-family: 'Metamorphous', serif;
 }
 
+h4 {
+  margin-top: 0.75em;
+}
+
 /*** COLORS ***/
 /*Charcoal background*/
 /*body {
@@ -117,3 +171,27 @@ h1, h2, h3 {
 
 
 /*** LINKS ***/
+
+
+
+/*** MEDIA QUERIES ***/
+@media screen and (min-width: 380px) {
+
+  .footer,
+  #about,
+  #index-main {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+}
+
+@media screen and (min-width: 580px) {
+
+  .flex-contain,
+  .buffs,
+  .conditions {
+    flex-direction: row;
+  }
+
+}

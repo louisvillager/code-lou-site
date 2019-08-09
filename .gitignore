@@ -3,3 +3,6 @@
 
 # Ignoring code snippets to save for later
 snippets.txt
+
+# Ignoring temporary files
+index-working.html
