@@ -1,14 +1,12 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Aleo|Libre+Baskerville|Metamorphous&display=swap');
 
 /*** GENERAL ***/
-
-/* Hiding Number Spinners - Webkit Browsers*/
+/* Hiding Number Spinners */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* Hiding Number Spinners - Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
 }
@@ -45,44 +43,51 @@ main {
 }
 
 
-/*** FORM ***/
+/*** PAGE: MOD TRACKER ***/
+#banner {
+  /*background: url(img/banner.png);
+  background-size: contain;
+  width: 100%;*/
+}
+
+.banner-img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#banner-title {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  /*position: relative;*/
+  text-align: center;
+  font-size: 4vw;
+  margin: 0;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+#form-wrapper {
+  max-width: 200px;
+}
+
 input[type='number'] {
   width: 3em;
   text-align: center;
   border-style: inset;
 }
 
-.base-out,
-.new-out {
-  display: inline-block;
-}
-
-.base-out,
-.new-out {
-  min-height: 30px;
-  min-width: 3em;
-  border-width: thin;
-  border-style: ridge;
-  background-color: #c7c7c7;
-  text-align: center;
-}
-
-
-/*** FOOTER ***/
-
-
-
-/*** PAGE: MOD TRACKER ***/
-form {
-  margin-bottom: 1em;
-}
-
 .flex-contain {
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: stretch;
   min-height: 44px;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  /*max-width: 550px;*/
 }
 
 .flex-item-a,
@@ -90,7 +95,25 @@ form {
 .flex-item-new {
   align-items: center;
   min-height: 44px;
+  min-width: 175px;
   padding-right: 1em;
+  text-align: right;
+  /*justify-content: flex-end;*/
+}
+
+.flex-item-a {
+  /*flex-grow: 2;*/
+}
+
+.base-out,
+.new-out {
+  display: inline-block;
+  min-height: 30px;
+  min-width: 3em;
+  border-width: thin;
+  border-style: ridge;
+  background-color: #c7c7c7;
+  text-align: center;
 }
 
 .buffs,
@@ -113,8 +136,6 @@ form {
 .profile {
   border-radius: 50%;
 }
-
-
 
 /* To Flip Profile Image*/
 #f1_container {
@@ -146,6 +167,10 @@ form {
   display: inline-block;
   transform: rotateY(180deg);
 }
+
+
+/*** FOOTER ***/
+
 
 
 /*** FONTS ***/
@@ -193,5 +218,13 @@ h4 {
   .conditions {
     flex-direction: row;
   }
+
+  #form-wrapper {
+    max-width: 500px;
+  }
+
+  /*.flex-item-a {
+    flex-grow: 1;
+  }*/
 
 }

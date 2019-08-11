@@ -21,6 +21,15 @@ const clearButton = elem('reset');
 
 
 // FUNCTIONS
+// Formatting
+function blankSpace() {
+  for (i = 0; i < 6; i++) {
+    baseMod[i].innerHTML = '&nbsp;';
+    newMod[i].innerHTML = '&nbsp;';
+  }
+}
+$(document).ready(blankSpace);
+
 function elem(x) {
   return document.getElementById(x);
 }
@@ -51,7 +60,7 @@ $eagle.click(() => {
   if (newModScore[5] != baseModScore[5]) {
     newMod[5].innerHTML = newModScore[5];
   } else {
-    newMod[5].innerHTML = '';
+    newMod[5].innerHTML = '&nbsp;';
   }
 });
 
@@ -65,7 +74,7 @@ $fox.click(() => {
   if (newModScore[3] != baseModScore[3]) {
     newMod[3].innerHTML = newModScore[3];
   } else {
-    newMod[3].innerHTML = '';
+    newMod[3].innerHTML = '&nbsp;';
   }
 });
 
@@ -84,7 +93,7 @@ $righteous.click(() => {
     if (newModScore[i] != baseModScore[i]) {
       newMod[i].innerHTML = newModScore[i];
     } else {
-      newMod[i].innerHTML = '';
+      newMod[i].innerHTML = '&nbsp;';
     }
   }
 });
@@ -99,7 +108,7 @@ $grappled.click(() => {
   if (newModScore[1] != baseModScore[1]) {
     newMod[1].innerHTML = newModScore[1];
   } else {
-    newMod[1].innerHTML = '';
+    newMod[1].innerHTML = '&nbsp;';
   }
 });
 
@@ -116,7 +125,7 @@ $fatigued.click(() => {
     if (newModScore[i] != baseModScore[i]) {
       newMod[i].innerHTML = newModScore[i];
     } else {
-      newMod[i].innerHTML = '';
+      newMod[i].innerHTML = '&nbsp;';
     }
   }
 });
@@ -132,7 +141,7 @@ $nauseated.click(() => {
     if (newModScore[i] != baseModScore[i]) {
       newMod[i].innerHTML = newModScore[i];
     } else {
-      newMod[i].innerHTML = '';
+      newMod[i].innerHTML = '&nbsp;';
     }
   }
 });
@@ -141,8 +150,8 @@ $nauseated.click(() => {
 // For clearing all fields
 clearButton.addEventListener('click', () => {
   for (let i = 0; i < scores.length; i++) {
-    baseMod[i].innerHTML = '';
-    newMod[i].innerHTML = '';
+    baseMod[i].innerHTML = '&nbsp;';
+    newMod[i].innerHTML = '&nbsp;';
     baseModScore[i] = 0;
     newModScore[i] = 0;
   }
