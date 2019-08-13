@@ -1,5 +1,5 @@
 // VARIABLES AND CONSTANTS
-// 0 - Str, 1 - Dex, 2 - Con, 3 - Int, 4 - Wis, 5 - Cha
+// [0 - Str, 1 - Dex, 2 - Con, 3 - Int, 4 - Wis, 5 - Cha]
 const scores = [elem('str'), elem('dex'), elem('con'), elem('intel'), elem('wis'), elem('cha')];
 const baseMod = [elem('str-base'), elem('dex-base'), elem('con-base'),
   elem('intel-base'), elem('wis-base'), elem('cha-base')];
@@ -33,7 +33,7 @@ $(document).ready(blankSpace);
 function elem(x) {
   return document.getElementById(x);
 }
-// Calculating ability score modifier
+// Calculating ability score base modifier
 function scoreMod(x) {
   return Math.floor((x - 10) / 2);
 }
