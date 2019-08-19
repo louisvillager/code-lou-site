@@ -26,7 +26,8 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #e0e0e0;  /* very light gray */
+  background-color: #e0e0e0; /* very light gray */
+  background-image: url(../img/symphony.png); /* Background pattern from Toptal Subtle Patterns */
 }
 
 main {
@@ -40,7 +41,7 @@ main {
 
 
 /*** PAGE: MOD TRACKER ***/
-#banner {
+  #banner {
   background-image: url(../img/banner.png);
   background-position: center;
   background-size: cover;
@@ -48,19 +49,16 @@ main {
   height: 0;
   padding-top: 20%;
   padding-bottom: 20%;
-  /*background-color: TBD;*/
   margin-bottom: 1rem;
+  background-color: #c8c2ae;
 }
 
 #banner-title {
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
-  /*position: relative;*/
   text-align: center;
   font-size: 5vw;
   margin: 0;
+  color: #fffbc4;
+  text-shadow: 3px 3px 0 #503033;
 }
 
 form {
@@ -95,15 +93,12 @@ input[type='number'] {
   text-align: right;
 }
 
-/*.base-out,
-.new-out {*/
 .output {
   display: inline-block;
   min-height: 30px;
   min-width: 3em;
   border-width: thin;
   border-style: ridge;
-  /*background-color: #c7c7c7;*/
   text-align: center;
 }
 
@@ -212,10 +207,6 @@ footer,
 .output {
   background-color: #36454f; /* charcoal gray */
   color: #f0ead6; /* eggshell */
-}
-
-.text-light {
-  color: red;
 }
 
 
